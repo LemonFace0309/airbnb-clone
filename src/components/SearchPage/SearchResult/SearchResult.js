@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
+import FavoriteIcon from '@material-ui/icons/Favorite'
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder'
-import StarIcon from "@material-ui/icons/Star";
+import StarIcon from '@material-ui/icons/Star'
 
 import classes from './SearchResult.module.css'
 
@@ -13,10 +14,33 @@ function SearchResult({
   price,
   total,
 }) {
+  const [isFavorite, setIsFavorite] = useState(false)
+
+  const selectHeartHandler = () => {
+    if (isFavorite) {
+      setIsFavorite(false)
+    } else {
+      setIsFavorite(true)
+    }
+  }
+
   return (
     <div className={classes.searchResult}>
       <img src={img} alt="" />
-      <FavoriteBorderIcon className={classes.searchResult__heart} />
+      {isFavorite ? (
+        <FavoriteIcon
+          color="secondary"
+          onClick={selectHeartHandler}
+          className={classes.searchResult__heart}
+          selected="yes"
+        />
+      ) : (
+        <FavoriteBorderIcon
+          onClick={selectHeartHandler}
+          className={classes.searchResult__heart}
+          selected="no"
+        />
+      )}
 
       <div className={classes.searchResult__info}>
         <div className={classes.searchResult__infoTop}>
