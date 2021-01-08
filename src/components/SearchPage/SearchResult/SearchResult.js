@@ -16,7 +16,7 @@ function SearchResult({
 }) {
   const [isFavorite, setIsFavorite] = useState(false)
 
-  const selectHeartHandler = () => {
+  const selectFavoriteHandler = () => {
     if (isFavorite) {
       setIsFavorite(false)
     } else {
@@ -30,13 +30,13 @@ function SearchResult({
       {isFavorite ? (
         <FavoriteIcon
           color="secondary"
-          onClick={selectHeartHandler}
+          onClick={selectFavoriteHandler}
           className={classes.searchResult__heart}
           selected="yes"
         />
       ) : (
         <FavoriteBorderIcon
-          onClick={selectHeartHandler}
+          onClick={selectFavoriteHandler}
           className={classes.searchResult__heart}
           selected="no"
         />
