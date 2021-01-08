@@ -11,6 +11,8 @@ function Banner() {
     setShowSearch(!showSearch)
   }
 
+  const buttonText = showSearch ? "Hide" : "Search Dates"
+
   return (
     <div className={classes.banner}>
       <div className={classes.banner__search}>
@@ -20,7 +22,7 @@ function Banner() {
           variant="outlined"
           className={classes.banner__searchButton}
         >
-          Search Dates
+          {buttonText}
         </Button>
       </div>
       <div className={classes.banner__info}>
