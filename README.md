@@ -1,3 +1,7 @@
+# VIEW DEPLOYED APP:
+Deployed with Firebase Hosting. View app [here](https://airbnb-clone-c67fc.web.app/)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
