@@ -4,22 +4,22 @@ import LanguageIcon from '@material-ui/icons/Language'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 import { Avatar } from '@material-ui/core'
 
-import './static/css/Header.css'
+import classes from './Header.module.css'
 
 function Header() {
   return (
-    <div className="header">
+    <div className={classes.header}>
       <img
-        className="header__icon"
+        className={classes.header__icon}
         src="https://1000logos.net/wp-content/uploads/2017/08/Airbnb-Logo.png"
         alt=""
       />
 
-      <div className="header__center">
+      <div className={classes.header__center}>
         <input type="text"/>
         <SearchIcon />
       </div>
-      <div className="header__right">
+      <div className={classes.header__right}>
         <p>Become a Host</p>
         <LanguageIcon />
         <ExpandMoreIcon />

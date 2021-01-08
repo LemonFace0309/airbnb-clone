@@ -1,6 +1,6 @@
-import './static/css/App.css'
-import Header from './Header'
-import Home from './Home'
+import './App.css'
+import Header from './shared/Header'
+import Home from './components/Home/Home'
 
 function App() {
   return (
