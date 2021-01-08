@@ -1,5 +1,5 @@
 # VIEW DEPLOYED APP:
-Deployed with Firebase Hosting. View app [here](https://airbnb-clone-c67fc.web.app/)
+Deployed with Firebase Hosting. View app [here](https://airbnb-clone-c67fc.web.app/) \
 Technologies Used: React, React Router DOM, Material UI, React Date Picker, Flexbox, Firebase Hosting
 
 # Getting Started with Create React App
